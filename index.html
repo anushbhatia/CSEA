@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title></title>
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper black">
+        <a href="#!" class="brand-logo"><img class="logo" src="img/logo1.png"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class"black-text" href="index.html">Home</a></li>
+          <li><a class"black-text" href="contact.html">Team</a></li>
+          <li><a class"black-text" href="#uniq">Updates <span class="new badge">3</span></a></li>
+          <li><a class"black-text" href="#">Mobile</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="contact.html">Team</a></li>
+    <li><a href="#uniq">Updates <span class="new badge">3</span></a></li>
+    <li><a href="#">Mobile</a></li>
+  </ul>
+  <!-------------------------NAV------------------------------------>
+  <div class="video-hero jquery-background-video-wrapper demo-video-wrapper">
+    <video class="jquery-background-video" autoplay muted loop poster="https://d2ezlykacdqcnj.cloudfront.net/_assets/home-video/beach-waves-loop.jpg">
+      <source src="vid/mouse.mp4" type="video/mp4">
+
+    </video>
+    <div class="video-overlay"></div>
+    <div class="page-width">
+      <div class="video-hero--content">
+        <h2>CSEA</h2>
+        <h4>Create.Stimulate.Emulate</h4>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="overlay">
+    <div class='dots'>
+      <div class='dot dot--green'></div>
+      <div class='dot dot--yellow'></div>
+      <div class='dot dot--red'></div>
+      <div class='dot dot--blue'></div>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col s12">
+          <h3 class="center">About</h3>
+        <div class="card horizontal">
+          <div class="card-image hide-on-med-and-down">
+            <img src="img/about.jpg">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content center">
+              <p class="flow-text  p">Computer Science and Engineering is arguably the most sought after field in today’s continuously evolving world of innumerable and unprecedented technological advancements. What sets this field apart is its need for endless innovation and constant improvement; qualities that we, at the CSE Association of SRM Institute of Science and Technology, imbibe and embody.
+
+      Ever since our inception, we have tirelessly strived to bring countless opportunities knocking on our students’ doors. From events highlighting the latest state of the art technology to competitions focussing upon not only technical but also non-technical aspects, we have done it all.
+
+      Our goal is to grow with every passing day and provide a platform where students can enhance and hone their intellectual capabilities and skills. We aim to empower every student with the means to transform their inchoate ideas to groundbreaking wonders.</p>
+             <a href="#" class="round btn black">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="uniq">
+<h3>Updates</h3>
+<div>
+  <ul class="collapsible">
+<li>
+  <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+</li>
+<li>
+  <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+</li>
+<li>
+  <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+</li>
+</ul>
+
+</div>
+    </div>
+
+
+
+
+
+  <!-------------------------MAIN------------------------------------>
+</body>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.sidenav').sidenav();
+  });
+  $(document).ready(function() {
+    $('.parallax').parallax();
+  });
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true
+  });
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+</script>
+<script>
+  var overlay = document.getElementById("overlay");
+  window.addEventListener('load', function() {
+    overlay.style.display = "none";
+  })
+</script>
+
+
+</html>
